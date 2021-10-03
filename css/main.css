@@ -82,6 +82,12 @@ body {
   height: 500px;
 }
 
+@media (max-width: 450px) {
+  .cover {
+    height: 575px;
+  }
+}
+
 .cover > img {
   -o-object-fit: cover;
   object-fit: cover;
@@ -243,4 +249,29 @@ body {
 
 .height {
   height: 0px;
+}
+
+.expandable-image {
+  cursor: pointer;
+}
+
+.dark-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-overlay img {
+  width: auto;
+  height: auto;
+  max-width: 95%;
+  max-height: 95%;
 }

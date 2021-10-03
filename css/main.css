@@ -289,3 +289,9 @@ body {
   color: hsla(5, 76%, 62%, 0.8);
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .close-overlay {
+    font-size: 35px;
+  }  
+}

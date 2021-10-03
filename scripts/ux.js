@@ -12,11 +12,16 @@ darkOverlay.addEventListener('click', closeImage);
 function expandImage(e) {
   const src = e.target.src;
   darkOverlay.style.display = 'flex'
-  darkOverlay.insertAdjacentHTML('afterbegin', `<img src="${src}" class="expanded-image"/>`)
+  darkOverlay.insertAdjacentHTML('afterbegin', `<img src="${src}"/>`);
 }
 
 // close image after overlay was clicked
-function closeImage() {
+function closeImage(e) {
+
+  if( e.target.tagName === 'IMG' ) {
+    return;
+  }
+
   darkOverlay.innerHTML = '';
   darkOverlay.style.display = 'none';
 }

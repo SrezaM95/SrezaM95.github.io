@@ -295,3 +295,10 @@ body {
     font-size: 35px;
   }  
 }
+
+.responsive-img {
+  width: 100% !important;
+  max-width: 320px !important;
+  height: auto;
+  max-height: 390px;
+}

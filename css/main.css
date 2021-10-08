@@ -293,7 +293,7 @@ body {
 @media (max-width: 500px) {
   .close-overlay {
     font-size: 35px;
-  }  
+  }
 }
 
 .responsive-img {
@@ -301,4 +301,13 @@ body {
   max-width: 320px !important;
   height: auto;
   max-height: 390px;
+}
+
+.atagR {
+  color: black;
+  margin-left: 45px;
+}
+
+.atagL a {
+  color: #4f4f4f;
 }
